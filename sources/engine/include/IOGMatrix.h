@@ -20,41 +20,41 @@
 
 #include "IOGVector.h"
 
-#define MAT00 0
-#define MAT01 1
-#define MAT02 2
-#define MAT03 3
-#define MAT10 4
-#define MAT11 5
-#define MAT12 6
-#define MAT13 7
-#define MAT20 8
-#define MAT21 9
-#define MAT22 10
-#define MAT23 11
-#define MAT30 12
-#define MAT31 13
-#define MAT32 14
-#define MAT33 15
+const int MAT00 = 0;
+const int MAT01 = 1;
+const int MAT02 = 2;
+const int MAT03 = 3;
+const int MAT10 = 4;
+const int MAT11 = 5;
+const int MAT12 = 6;
+const int MAT13 = 7;
+const int MAT20 = 8;
+const int MAT21 = 9;
+const int MAT22 = 10;
+const int MAT23 = 11;
+const int MAT30 = 12;
+const int MAT31 = 13;
+const int MAT32 = 14;
+const int MAT33 = 15;
 
 #define MAT(m,r,c) (m)[(c)*4+(r)]
 
-#define _11 0
-#define _12 1
-#define _13 2
-#define _14 3
-#define _21 4
-#define _22 5
-#define _23 6
-#define _24 7
-#define _31 8
-#define _32 9
-#define _33 10
-#define _34 11
-#define _41 12
-#define _42 13
-#define _43 14
-#define _44 15
+const int _11 = 0;
+const int _12 = 1;
+const int _13 = 2;
+const int _14 = 3;
+const int _21 = 4;
+const int _22 = 5;
+const int _23 = 6;
+const int _24 = 7;
+const int _31 = 8;
+const int _32 = 9;
+const int _33 = 10;
+const int _34 = 11;
+const int _41 = 12;
+const int _42 = 13;
+const int _43 = 14;
+const int _44 = 15;
 
 
 /*!***************************************************************************
