@@ -46,11 +46,11 @@ woven in by Terry Thorsen 1/2003.
 #  include <string.h>
 #  include <stdlib.h>
 #endif
-//#ifdef NO_ERRNO_H
+#ifdef NO_ERRNO_H
     extern int errno;
-//#else
-//#   include <errno.h>
-//#endif
+#else
+#   include <errno.h>
+#endif
 
 
 #ifndef local
