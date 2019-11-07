@@ -16,10 +16,19 @@ add_executable(SkyCrasher WIN32
 target_compile_definitions(SkyCrasher PRIVATE
                 -D_CRT_SECURE_NO_WARNINGS
                 -D_UNICODE
+                -DGLEW_STATIC
+                -DNOMINMAX
 )
 
-target_link_directories(SkyCrasher PRIVATE 
-                        engine/sdk/OpenGL2/lib
-)
 
-target_link_libraries(SkyCrasher Game Engine glew32 opengl32)
+if(${CMAKE_SIZEOF_VOID_P} STREQUAL "8")
+    set(GLEWPATH engine/sdk/OpenGL2/lib/x64)
+else()
+    set(GLEWPATH engine/sdk/OpenGL2/lib/x86)
+endif()
+
+target_link_directories(SkyCrasher PRIVATE ${GLEWPATH})
+
+target_link_libraries(SkyCrasher Game Engine glew32s opengl32)
+
+#add_subdirectory(skycrasher/tools/EffectViewer)
