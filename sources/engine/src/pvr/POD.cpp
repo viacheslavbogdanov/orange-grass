@@ -314,8 +314,8 @@ static bool ReadCPODData(
                 if(!src.ReadAfterAlloc(s.pData, nLen)) return false; 
             } 
             else 
-            { 
-                if(!src.Read(s.pData)) return false; 
+            {
+                if(!src.Skip(nLen)) return false;
             }
             break;
 
