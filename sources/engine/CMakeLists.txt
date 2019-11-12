@@ -207,4 +207,6 @@ target_include_directories(Engine
 target_compile_definitions(Engine PRIVATE
                 -D_CRT_SECURE_NO_WARNINGS
                 -D_UNICODE
+                -DGLEW_STATIC
+                -DNOMINMAX
 )
