@@ -137,4 +137,6 @@ target_link_libraries(Game Engine)
 target_compile_definitions(Game PRIVATE
                 -D_CRT_SECURE_NO_WARNINGS
                 -D_UNICODE
+                -DGLEW_STATIC
+                -DNOMINMAX
 )
