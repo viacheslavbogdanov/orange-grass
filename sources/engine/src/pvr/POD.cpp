@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "POD.h"
-#include "../ogresourcefile.h"
+#include "ogresourcefile.h"
 
 
 #define PVRTMODELPOD_TAG_MASK			(0x80000000)

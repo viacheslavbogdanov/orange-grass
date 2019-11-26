@@ -1,0 +1,5 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+IDI_APP_ICON            ICON                    "resources\\airassault.ico"

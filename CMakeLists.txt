@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.8)
+
+project(SkyCrasher)
+
+if(WIN32)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP")
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_CURRENT_SOURCE_DIR}/)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_CURRENT_SOURCE_DIR}/)
+endif()
+
+add_subdirectory(3rdparty)
+add_subdirectory(sources/game)
+add_subdirectory(sources/engine)
+
+if(WIN32)
+    add_subdirectory(sources/launcher/win32)
+endif()
+
+if(ANDROID)
+    add_subdirectory(sources/launcher/android)
+endif()

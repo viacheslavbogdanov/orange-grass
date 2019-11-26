@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "OpenGL2.h"
-#include "../ogresourcefile.h"
+#include "ogresourcefile.h"
 #include "PVRTC.h"
 
 
