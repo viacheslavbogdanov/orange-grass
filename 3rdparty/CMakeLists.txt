@@ -2,8 +2,6 @@ set(3RDPARTY
     unzip/crypt.h
     unzip/ioapi.c
     unzip/ioapi.h
-    unzip/iowin32.c
-    unzip/iowin32.h
     unzip/unzip.c
     unzip/unzip.h
     unzip/zip.c
@@ -43,6 +41,14 @@ set(3RDPARTY
     pvrtc/PVRTDecompress.cpp
     pvrtc/PVRTDecompress.h
 )
+
+if(WIN32)
+set(3RDPARTY
+    ${3RDPARTY}
+    unzip/iowin32.c
+    unzip/iowin32.h
+)
+endif()
 
 add_library(3rdparty_libraries STATIC ${3RDPARTY})
 

@@ -3,3 +3,6 @@ log.txt
 SkyCrasher.exe
 *.ilk
 *.pdb
+.externalNativeBuild
+.gradle
+build
