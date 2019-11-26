@@ -15,8 +15,7 @@
  * License along with this program.  If not, see
  * <http://www.gnu.org/licenses/lgpl-3.0-standalone.html>.
  */
-#ifndef ORANGEGRASS_H_
-#define ORANGEGRASS_H_
+#pragma once
 
 #include "IOGCoreHelpers.h"
 #include "IOGResourceMgr.h"
@@ -35,6 +34,7 @@
 #include "IOGVector.h"
 #include "IOGMatrix.h"
 #include "IOGQuaternion.h"
+#include <string>
 
 
 void StartOrangeGrass(const std::string& _ResourcePath, bool _bSingleStorage);
@@ -66,5 +66,3 @@ OGShaderID ParseShaderId (const std::string& _ShaderIdStr);
 
 // Parse the submesh type string and convert it to internal type
 SubMeshType ParseSubMeshType (const std::string& _SubMeshTypeStr);
-
-#endif

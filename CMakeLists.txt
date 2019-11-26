@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.6)
 
 project(SkyCrasher)
 
+set(CMAKE_CXX_STANDARD 14)
+
 if(WIN32)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP")
     set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_CURRENT_SOURCE_DIR}/)
@@ -18,4 +20,8 @@ endif()
 
 if(ANDROID)
     add_subdirectory(sources/launcher/android)
+endif()
+
+if(UNIX AND NOT ANDROID)
+    add_subdirectory(sources/launcher/linux)
 endif()

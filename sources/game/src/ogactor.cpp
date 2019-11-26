@@ -18,6 +18,7 @@
 #include "Game.h"
 #include "IOGMath.h"
 #include "ogactor.h"
+#include <climits>
 
 
 COGActor::COGActor() :	m_bActive(true),

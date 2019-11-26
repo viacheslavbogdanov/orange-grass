@@ -25,6 +25,7 @@
 #include "ogsprite.h"
 #include "ogvertexbuffers.h"
 #include "ogdynvertexbuffers.h"
+#include <stdarg.h>
 
 #ifdef __cplusplus
 extern "C" {

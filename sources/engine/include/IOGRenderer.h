@@ -15,8 +15,7 @@
  * License along with this program.  If not, see
  * <http://www.gnu.org/licenses/lgpl-3.0-standalone.html>.
  */
-#ifndef IOGRENDERER_H_
-#define IOGRENDERER_H_
+#pragma once
 
 #include "IOGTexture.h"
 #include "IOGMaterial.h"
@@ -26,6 +25,9 @@
 #include "IOGVertexBuffers.h"
 #include "IOGShader.h"
 
+#ifdef DisplayString
+#undef DisplayString
+#endif
 
 class IOGRenderer
 {
@@ -121,5 +123,3 @@ public:
     // Debug - label object.
     virtual void LabelObject (unsigned int _ObjType, unsigned int _ObjId, const std::string& _ObjLabelStr) = 0;
 };
-
-#endif
