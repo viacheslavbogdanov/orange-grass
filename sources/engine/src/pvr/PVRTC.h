@@ -1,5 +1,4 @@
-#ifndef PVRTC_H_
-#define PVRTC_H_
+#pragma once
 
 #include "OpenGL2.h"
 #include <stdio.h>
@@ -46,30 +45,5 @@ typedef struct TextureImageData_TAG
 } TextureImageData;
 
 
-//// Loads the whole texture from PVR.
-//unsigned int  LoadTextureFromPVR(
-//    const char* const filename, 
-//    GLuint* const texName, 
-//    const void* psTextureHeader=NULL);
 // Loads the whole texture from PVR.
 TextureImageData* LoadTextureFromPVR(const char* const filename);
-
-
-// PVRTC Decompression
-void PVRTCDecompress(
-    const void* pCompressedData,
-    int Do2bitMode,
-    int XDim,
-    int YDim,
-    unsigned char* pResultImage);
-
-
-// ETC Decompression
-int ETCDecompress(
-    const void* const pSrcData,
-    unsigned int x,
-    unsigned int y,
-    void *pDestData,
-    int nMode);
-
-#endif

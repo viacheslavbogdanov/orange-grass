@@ -38,6 +38,10 @@ set(3RDPARTY
     tinyxml/tinyxml.h
     tinyxml/tinyxmlerror.cpp
     tinyxml/tinyxmlparser.cpp
+#
+    pvrtc/PVRTDecompress.cpp
+    pvrtc/PVRTDecompress.cpp
+    pvrtc/PVRTDecompress.h
 )
 
 add_library(3rdparty_libraries STATIC ${3RDPARTY})
@@ -48,6 +52,7 @@ PUBLIC
    unzip
    zlib
    tinyxml
+   pvrtc
 )
 
 if(WIN32)
