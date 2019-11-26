@@ -18,6 +18,9 @@ allprojects {
         google()
         jcenter()
     }
+
+  //buildDir = "_build/${rootProject.name}/${project.name}"
+  buildDir = "${rootDir.absolutePath}/_build/"
 }
 
 task clean(type: Delete) {
