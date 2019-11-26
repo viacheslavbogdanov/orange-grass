@@ -1,3 +1,5 @@
 _build
 log.txt
 SkyCrasher.exe
+*.ilk
+*.pdb
