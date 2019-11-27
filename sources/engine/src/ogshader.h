@@ -19,7 +19,7 @@
 #define OGSHADER_H_
 
 #include "OpenGL2.h"
-#include <stdio.h>
+#include <cstdio>
 #include <string>
 
 

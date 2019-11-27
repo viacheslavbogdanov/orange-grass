@@ -1,8 +1,8 @@
 #include "OrangeGrass.h"
-#include <math.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include <cmath>
+#include <cstdlib>
+#include <cstdio>
+#include <string>
 #include "POD.h"
 #include "ogresourcefile.h"
 

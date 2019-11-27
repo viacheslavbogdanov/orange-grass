@@ -1,4 +1,5 @@
 add_library(Engine
+    src/precompiled.cpp
     src/ogcamera.cpp
     src/ogcamera.h
     src/ogcoloreffectshader.cpp
@@ -145,8 +146,19 @@ add_library(Engine
     src/pvr/POD.h
     src/pvr/PVRTC.cpp
     src/pvr/PVRTC.h
-
 )
+
+if (WIN32)
+    target_precompile_headers(Engine PUBLIC src/precompiled.h)
+
+    target_compile_definitions(Engine PRIVATE
+                    -D_CRT_SECURE_NO_WARNINGS
+                    -D_UNICODE
+                    -DGLEW_STATIC
+                    -DNOMINMAX
+    )
+
+endif()
 
 target_include_directories(Engine
     PUBLIC include
@@ -154,14 +166,5 @@ target_include_directories(Engine
     PRIVATE
            src
 )
-
-if(WIN32)
-target_compile_definitions(Engine PRIVATE
-                -D_CRT_SECURE_NO_WARNINGS
-                -D_UNICODE
-                -DGLEW_STATIC
-                -DNOMINMAX
-)
-endif()
 
 target_link_libraries(Engine 3rdparty_libraries)

@@ -17,9 +17,9 @@
  */
 #include "OrangeGrass.h"
 #include "ogresourcefile.h"
-#include <stdio.h>
-#include <string.h>
-#ifdef WIN32
+#include <cstdio>
+#include <cstring>
+#ifdef _WIN32
 #include <windows.h>
 #endif
 #include "unzip/unzip.h"

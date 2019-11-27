@@ -1,7 +1,7 @@
 #pragma once
 
 #include "OpenGL2.h"
-#include <stdio.h>
+#include <cstdio>
 
 
 // Describes the header of a PVR header-texture

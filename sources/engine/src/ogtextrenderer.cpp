@@ -20,11 +20,9 @@
 
 #include "OpenGL2.h"
 #include "OrangeGrass.h"
-#include <stdarg.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdarg.h>
-
+#include <cstdarg>
+#include <cstdio>
+#include <cstring>
 
 #include "IOGMath.h"
 #include "ogtextrenderer.h"

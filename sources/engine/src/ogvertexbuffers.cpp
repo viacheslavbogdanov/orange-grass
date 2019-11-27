@@ -18,7 +18,7 @@
 #include "OpenGL2.h"
 #include "OrangeGrass.h"
 #include "ogvertexbuffers.h"
-#include <string.h>
+#include <cstring>
 
 
 COGVertexBuffers::~COGVertexBuffers ()

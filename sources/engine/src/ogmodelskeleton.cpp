@@ -17,7 +17,7 @@
  */
 #include "OrangeGrass.h"
 #include "ogmodelskeleton.h"
-#include <string.h>
+#include <cstring>
 
 
 COGModelSkeleton::COGModelSkeleton()

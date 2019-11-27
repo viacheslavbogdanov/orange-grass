@@ -16,8 +16,8 @@
  * <http://www.gnu.org/licenses/lgpl-3.0-standalone.html>.
  */
 #include "ogresource.h"
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+#include <cstring>
 
 
 // Constructor

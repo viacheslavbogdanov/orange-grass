@@ -17,7 +17,7 @@
  */
 #include "LoadScreenController.h"
 #include "Game.h"
-#include <stdio.h>
+#include <cstdio>
 
 
 CLoadScreenController::CLoadScreenController() :	m_State(CSTATE_NO),

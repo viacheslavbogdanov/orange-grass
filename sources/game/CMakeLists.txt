@@ -127,10 +127,12 @@ target_include_directories(Game
 target_link_libraries(Game Engine)
 
 if(WIN32)
-target_compile_definitions(Game PRIVATE
-                -D_CRT_SECURE_NO_WARNINGS
-                -D_UNICODE
-                -DGLEW_STATIC
-                -DNOMINMAX
-)
+    target_precompile_headers(Game PUBLIC src/precompiled.h)
+
+    target_compile_definitions(Game PRIVATE
+                    -D_CRT_SECURE_NO_WARNINGS
+                    -D_UNICODE
+                    -DGLEW_STATIC
+                    -DNOMINMAX
+    )
 endif()

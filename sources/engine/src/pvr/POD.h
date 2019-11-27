@@ -1,6 +1,4 @@
-#ifndef POD_H_
-#define POD_H_
-
+#pragma once
 
 /*!****************************************************************************
  @Struct      EPODLight
@@ -575,6 +573,3 @@ size_t PVRTModelPODDataStride(const CPODData &data);
  @Description	Counts the number of indices of a mesh
 *****************************************************************************/
 unsigned int PVRTModelPODCountIndices(const SPODMesh &mesh);
-
-
-#endif

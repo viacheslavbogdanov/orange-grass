@@ -1,7 +1,7 @@
 #include "OrangeGrass.h"
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include <cstring>
+#include <cstdlib>
+#include <cstdio>
 #include "OpenGL2.h"
 #include "ogresourcefile.h"
 #include "PVRTC.h"

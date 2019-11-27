@@ -16,10 +16,10 @@
  * <http://www.gnu.org/licenses/lgpl-3.0-standalone.html>.
  */
 #include "IOGCoreHelpers.h"
-#include <math.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include <cmath>
+#include <cstring>
+#include <cstdlib>
+#include <cstdio>
 #include "IOGQuaternion.h"
 
 
