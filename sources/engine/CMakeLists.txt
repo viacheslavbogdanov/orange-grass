@@ -148,23 +148,24 @@ add_library(Engine
     src/pvr/PVRTC.h
 )
 
-if (WIN32)
-    target_precompile_headers(Engine PUBLIC src/precompiled.h)
-
-    target_compile_definitions(Engine PRIVATE
-                    -D_CRT_SECURE_NO_WARNINGS
-                    -D_UNICODE
-                    -DGLEW_STATIC
-                    -DNOMINMAX
-    )
-
-endif()
-
 target_include_directories(Engine
     PUBLIC include
            3rdparty/glew/include
     PRIVATE
            src
 )
+
+if(NOT ANDROID)
+    target_precompile_headers(Engine PUBLIC src/precompiled.h)
+endif()
+
+if(WIN32)
+    target_compile_definitions(Engine PRIVATE
+                    -D_CRT_SECURE_NO_WARNINGS
+                    -D_UNICODE
+                    -DGLEW_STATIC
+                    -DNOMINMAX
+    )
+endif()
 
 target_link_libraries(Engine 3rdparty_libraries)

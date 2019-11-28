@@ -122,13 +122,14 @@ add_library(Game
 
 target_include_directories(Game 
     PUBLIC include
-    )
+)
 
-target_link_libraries(Game Engine)
+
+if(NOT ANDROID)
+    target_precompile_headers(Game PUBLIC src/precompiled.h)
+endif()
 
 if(WIN32)
-    target_precompile_headers(Game PUBLIC src/precompiled.h)
-
     target_compile_definitions(Game PRIVATE
                     -D_CRT_SECURE_NO_WARNINGS
                     -D_UNICODE
@@ -136,3 +137,5 @@ if(WIN32)
                     -DNOMINMAX
     )
 endif()
+
+target_link_libraries(Game Engine)
