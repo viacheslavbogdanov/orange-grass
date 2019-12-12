@@ -40,18 +40,18 @@ android {
 
     flavorDimensions 'cpuArch'
     productFlavors {
-        //arm7 {
-        //    dimension 'cpuArch'
-        //    ndk {
-        //        abiFilter 'armeabi-v7a'
-        //    }
-        //}
-        //arm8 {
-        //    dimension 'cpuArch'
-        //    ndk {
-        //        abiFilters 'arm64-v8a'
-        //    }
-        //}
+        arm7 {
+            dimension 'cpuArch'
+            ndk {
+                abiFilter 'armeabi-v7a'
+            }
+        }
+        arm8 {
+            dimension 'cpuArch'
+            ndk {
+                abiFilters 'arm64-v8a'
+            }
+        }
         //x86 {
         //    dimension 'cpuArch'
         //    ndk {
