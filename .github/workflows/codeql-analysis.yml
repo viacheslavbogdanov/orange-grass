@@ -63,7 +63,7 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       cmake sources
+       cmake .
        cmake --build .
 #       working-directory: ./sources
 
